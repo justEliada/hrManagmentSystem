@@ -1,0 +1,26 @@
+
+<app-top-bar></app-top-bar>
+<div class="approved-vacations">
+  <h3>All Vacation Requests</h3>
+  <div class="filter-buttons">
+    <button (click)="filterVacations('APPROVED')">Approved</button>
+    <button (click)="filterVacations('PENDING')">Pending</button>
+    <button (click)="filterVacations('REJECTED')">Rejected</button>
+    <button (click)="filterVacations('ALL')">Show All</button>
+  </div>
+  <div class="vacation-list">
+    <div *ngFor="let vacation of vacationList" class="vacation-entry">
+      <span class="vacation-dates">
+        {{ vacation.fromDate | date: "mediumDate" }} -
+        {{ vacation.toDate | date: "mediumDate" }}
+      </span>
+      <button class="status-button" [ngClass]="{
+            'approved': vacation.status === 'APPROVED',
+            'pending': vacation.status === 'PENDING',
+            'rejected': vacation.status === 'REJECTED'
+          }">
+        {{ vacation.status }}
+      </button>
+    </div>
+  </div>
+</div>

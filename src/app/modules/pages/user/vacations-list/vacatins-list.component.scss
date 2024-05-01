@@ -1,0 +1,71 @@
+.approved-vacations {
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+  
+    h3 {
+      margin-top: 0;
+      padding: 20px 0;
+      font-size: 1.5rem;
+    }
+  
+    .filter-buttons {
+      margin-bottom: 20px;
+  
+      button {
+        margin-right: 10px;
+        background-color: #FFEFEF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    .vacation-list {
+      .vacation-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        margin: 15px auto;
+        background: #f7f7f7;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        .vacation-dates {
+          color: #000000;
+          padding: 10px;
+        }
+  
+        .status-button {
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          padding: 5px 10px;
+  
+          &.approved {
+            background-color: #5EAAA8;
+            color: white;
+          }
+  
+          &.rejected {
+            background-color: #ED6663;
+            color: white;
+          }
+  
+          &.pending {
+            background-color: #E8DED2;
+            color: #666;
+          }
+        }
+      }
+    }
+  }

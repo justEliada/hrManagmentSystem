@@ -1,0 +1,69 @@
+<app-modal [(show)]="showModal">
+    <form class="vacation-request-form" (ngSubmit)="submitVacationRequest()">
+      <div class="date-picker">
+        <input type="date" name="startDate" [(ngModel)]="vacationRequest.fromDate" placeholder="START DATE" required />
+        <input type="date" name="endDate" [(ngModel)]="vacationRequest.toDate" placeholder="END DATE" required />
+      </div>
+      <textarea name="note" [(ngModel)]="vacationRequest.notes" placeholder="NOTE" required></textarea>
+      <button type="submit">Add</button>
+    </form>
+  </app-modal>
+  <div class="dashboard-container">
+    <div class="edit-user-container">
+      <div class="header-container">Edit Employee</div>
+      <form class="detail-wrapper" [formGroup]="editForm" (ngSubmit)="saveChanges()">
+        <div class="detail">
+          <span class="label">First Name:</span>
+          <input formControlName="firstName" class="value" type="text" />
+        </div>
+        <div class="detail">
+          <span class="label">Last Name:</span>
+          <input formControlName="lastName" class="value" type="text" />
+        </div>
+        <div class="detail">
+          <span class="label">Username:</span>
+          <input formControlName="username" class="value" type="text" />
+        </div>
+        <div class="detail">
+          <p [ngStyle]="{'color': '#43658B'}"><strong>Vacation Days:</strong> {{ selectedUserDaysOff }} DAYS</p>
+        </div>
+        <div class="actions">
+          <button type="button" class="save-button" (click)="saveChanges()">
+            SAVE CHANGES
+          </button>
+          <button type="button" class="cancel-button" routerLink="/dashboard">CANCEL</button>
+        </div>
+      </form>
+    </div>
+    <div class="user-request-note">
+      <div class="header-container"><button type="button" (click)="openModal()">Add Vacation Days</button>
+        <button type="button" (click)="showCalendar = true">Show Calendar</button>
+          <app-calendar-modal [(show)]="showCalendar" (showChange)="handleShowChange($event)">
+          </app-calendar-modal>
+      </div> 
+      <div *ngFor="let vacation of userRequestNotes" class="vacation-entry">
+        <div class="vacation-info">
+          <span class="vacation-dates">
+            {{ vacation.fromDate | date : "mediumDate" }} -
+            {{ vacation.toDate | date : "mediumDate" }}
+            <span class="status" [ngClass]="{
+                approved: vacation.status === 'APPROVED',
+                pending: vacation.status === 'PENDING',
+                rejected: vacation.status === 'REJECTED'
+              }">
+              {{ vacation.status }}
+            </span>
+          </span>
+          <span class="vacation-notes">{{ vacation.notes }}</span>
+        </div>
+        <button *ngIf="vacation.status === 'PENDING' || vacation.status === 'APPROVED'" class="rejected" type="button"
+          (click)="rejectUserRequest(vacation.id)">
+          Reject
+        </button>
+        <button *ngIf="vacation.status === 'PENDING' || vacation.status === 'REJECTED'" class="approved" type="button"
+          (click)="approveUserRequest(vacation.id)">
+          Approve
+        </button>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,56 @@
+<div class="signup-container">
+    <div class="content-wrapper">
+      <div class="signup-card">
+        <div class="logo">
+          <img src="assets/images/metrospaceLogo.png" alt="TeamSystem Logo">
+        </div>
+        <div class="tab-menu">
+          <button class="tab" routerLink="">Login</button>
+          <button class="tab active" routerLink="/signup">Sign Up</button>
+        </div>
+  
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form">
+  
+          <div class="form-group">
+            <label for="firstName">First Name*</label>
+            <input type="firstName" id="firstName" formControlName="firstName" placeholder="First Name"
+              [ngClass]="{'is-invalid': signupForm.get('firstName')?.touched && signupForm.get('firstName')?.invalid}">
+            <div *ngIf="signupForm.get('firstName')?.hasError('required') && signupForm.controls['firstName'].touched"
+              class="error" [ngStyle]="{'color': signupForm.get('firstName')?.invalid ? 'red' : ''}">First Name is required.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="lastName">Last Name*</label>
+            <input type="lastName" id="lastName" formControlName="lastName" placeholder="Last Name"
+              [ngClass]="{'is-invalid': signupForm.get('username')?.touched && signupForm.get('lastName')?.invalid}">
+            <div *ngIf="signupForm.get('lastName')?.hasError('required') && signupForm.controls['lastName'].touched"
+              class="error" [ngStyle]="{'color': signupForm.get('lastName')?.invalid ? 'red' : ''}">Last Name is required.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="username">Username*</label>
+            <input type="username" id="username" formControlName="username" placeholder="Username" [ngClass]="{'is-invalid': signupForm.get('username')?.touched && signupForm.get('username')?.invalid}">
+            <div *ngIf="signupForm.get('username')?.hasError('required') && signupForm.controls['username'].touched" class="error" [ngStyle]="{'color': signupForm.get('username')?.invalid ? 'red' : ''}">
+              Username is required.
+            </div>
+            <div *ngIf="signupForm.get('username')?.errors?.['usernameTaken']" class="error">
+              Username is already taken.
+            </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="password">Password*</label>
+            <input type="password" id="password" formControlName="password" placeholder="password"
+              [ngClass]="{'is-invalid': signupForm.get('password')?.touched && signupForm.get('password')?.invalid}">
+            <div *ngIf="signupForm.get('password')?.hasError('required') && signupForm.controls['password'].touched"
+              class="error" [ngStyle]="{'color': signupForm.get('password')?.invalid ? 'red' : ''}">Password is required.
+            </div>
+          </div>
+  
+          <button type="submit" class="btn-signup">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>

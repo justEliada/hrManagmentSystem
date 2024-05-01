@@ -1,0 +1,37 @@
+<div class="login-container">
+    <div class="login-card">
+      <div class="logo">
+        <img src="assets/images/metrospaceLogo.png" alt="TeamSystem Logo">
+      </div>
+  
+      <div class="tab-menu">
+        <button class="tab active" routerLink="">Login</button>
+        <button class="tab" routerLink="/signup">Sign Up</button>
+      </div>
+  
+      <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
+  
+        <div class="form-group">
+          <label for="username">Username*</label>
+          <input type="username" id="username" formControlName="username" placeholder="Username"
+            [ngClass]="{'is-invalid': loginForm.get('username')?.touched && loginForm.get('username')?.invalid}">
+          <div *ngIf="loginForm.get('username')?.hasError('required') && loginForm.controls['username'].touched"
+            class="error" [ngStyle]="{'color': loginForm.get('username')?.invalid ? 'red' : ''}">Username is required.
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Password*</label>
+          <input type="password" id="password" formControlName="password" placeholder="password"
+            [ngClass]="{'is-invalid': loginForm.get('password')?.touched && loginForm.get('password')?.invalid}">
+          <div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.controls['password'].touched"
+            class="error" [ngStyle]="{'color': loginForm.get('password')?.invalid ? 'red' : ''}">Password is required.
+          </div>
+        </div>
+  
+        <div class="form-group">
+        </div>
+        <button type="submit" class="btn-login">Login</button>
+      </form>
+    </div>
+  </div>

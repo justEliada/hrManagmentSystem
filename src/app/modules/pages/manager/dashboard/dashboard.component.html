@@ -1,0 +1,41 @@
+<app-top-bar (searchEvent)="handleSearch($event)"></app-top-bar>
+<div class="dashboard-container">
+  <div class="employee-status-table">
+    <h2>List of employees in the company</h2>
+    <button class="filter-button" (click)="toggleFilter()">
+      {{ isFilterApplied ? 'Back to List' : 'Newest Requests' }}
+    </button>    
+     <table>
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Employee Username</th>
+          <th>Modifications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.firstName }} {{ user.lastName }}</td>
+          <td>{{ user.username }}</td>
+          <td>
+            <button mat-raised-button
+              class="edit-button"
+              [ngStyle]="{'background-color': '#A3D2CA', color: 'black'}"
+              (click)="editUser(user.id)"
+              [matBadge]="user.hasPendingVacation ? '!' : null"
+              matBadgeColor="warn"
+              matBadgePosition="above before">
+              EDIT
+            </button>
+            <button mat-raised-button
+              class="delete-button"
+              [ngStyle]="{'background-color': '#ED6663', color: 'black'}"
+              (click)="deleteUser(user.id)">
+              DELETE
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

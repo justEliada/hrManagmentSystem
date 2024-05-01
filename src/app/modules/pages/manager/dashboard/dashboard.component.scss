@@ -1,0 +1,77 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: calc(100vh - 70px);
+    justify-content: end;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+    h2 {
+      margin: 0;
+      color: #43658B;
+    }
+  
+    .filter-button{
+      background-color: #94abc5;
+      padding: 5px;
+      margin:8px;
+      margin-left:0px;
+      border-radius: 5px;
+      border: none;
+  
+    }
+  
+    .employee-status-table {
+      padding: 1rem;
+      width: 75%;
+      margin: 0 auto;
+  
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        thead {
+          th {
+            text-align: left;
+            padding: 0.5rem;
+            background-color: #e1e1e1;
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid #e1e1e1;
+            td {
+              padding: 0.5rem;
+              .status-tag {
+                padding: 0.25rem 0.5rem;
+                border-radius: 0.25rem;
+                &.approved {
+                  background-color: #c8e6c9;
+                }
+                &.pending {
+                  background-color: #fafafa;
+                }
+                &.rejected {
+                  background-color: #ffcdd2;
+                }
+              }
+              .edit-button
+              {
+                margin: 0 0.25rem;
+                padding: 0.25rem 0.5rem;
+                border: none;
+                border-radius: 0.25rem;
+                cursor: pointer;
+              }
+              .delete-button {
+                margin: 0 0.25rem;
+                padding: 0.25rem 0.5rem;
+                border: none;
+                border-radius: 0.25rem;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

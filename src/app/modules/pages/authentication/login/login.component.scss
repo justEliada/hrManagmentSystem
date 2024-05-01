@@ -1,0 +1,131 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #e6f0fd;
+
+    .login-card {
+      background: #0A2C66;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      color: white;
+  
+      .logo {
+        text-align: center;
+        margin-bottom: 1.5rem;
+  
+        img {
+          max-width: 100px; 
+        }
+      }
+  
+      .tab-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+  
+        .tab {
+          padding: 0.5rem 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          position: relative;
+          color: white;
+  
+          &.active {
+            color: #ffffff;
+  
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: -10px;
+              left: 0;
+              width: 100%;
+              height: 4px;
+              background: #71ABDF;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+  
+      .login-form {
+        .form-group {
+          margin-bottom: 1rem;
+          .is-invalid {
+            border-color: #dc3545;
+          }
+        
+          .invalid-feedback {
+            color: #dc3545;
+            display: none; 
+          
+            &.ng-invalid.ng-touched {
+              display: block; 
+            }
+        }
+          label {
+            display: block;
+            margin-bottom: .5rem;
+          }
+  
+          input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+  
+            &:focus {
+              outline: none;
+              border-color: #43658B;
+              box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+            }
+          }
+  
+          .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.5rem;
+  
+            .remember-me {
+              display: flex;
+              align-items: center;
+  
+              input[type="checkbox"] {
+                margin-right: 0.5rem;
+              }
+            }
+  
+            .forgot-password {
+              color: #007bff;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+  
+        .btn-login {
+          width: 100%;
+          padding: 1rem;
+          border: none;
+          border-radius: 4px;
+          background-color: #71ABDF;
+          color: #fff;
+          font-weight: bold;
+          margin-bottom: 1rem;
+          cursor: pointer;
+          &:hover {
+            background-color: darken(#71ABDF, 5%);
+          }
+        }
+      }
+    }
+  }

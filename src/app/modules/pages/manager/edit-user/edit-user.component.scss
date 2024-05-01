@@ -1,0 +1,222 @@
+.vacation-request-form {
+    display: flex;
+    flex-direction: column;
+  
+    .date-picker {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      input[type="date"] {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 10px;
+        width: 48%;
+      }
+    }
+  
+    textarea {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 10px;
+      height: 100px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      background-color: #71ABDF;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #71ABDF;
+    }
+  }
+  
+  .dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    height: calc(100vh - 70px);
+    justify-content: end;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  
+    .edit-user-container {
+      margin: 30px;
+  
+      .detail-wrapper {
+        background: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        .detail {
+          display: grid;
+          align-items: center;
+          margin-bottom: 15px;
+  
+          .label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+          }
+  
+          .value {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #333;
+            
+            &::placeholder {
+              color: #aaa;
+            }
+          }
+        }
+      }
+  
+    }
+  
+  
+    .user-request-note {
+      margin: 30px;
+        .vacation-entry {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 16px;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr auto auto auto auto;
+        align-items: center;
+        gap: 16px;
+  
+        .vacation-info {
+          .vacation-dates {
+            display: block;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+          }
+  
+          .vacation-notes {
+            font-size: 14px;
+            color: #666;
+            display: block;
+          }
+        }
+  
+        .status {
+          padding: 4px 6px;
+          border: none;
+          border-radius: 4px;
+          font-size: 10px;
+  
+          &.approved {
+            background-color: #5EAAA8;
+            color: white;
+          }
+          &.rejected {
+            background-color: #ED6663;
+            color: white;
+          }
+          &.pending {
+            background-color: #E8DED2;
+            color: white;
+          }
+        }
+        button {
+          padding: 8px 16px;
+          border: none;
+          border-radius: 4px;
+          font-weight: bold;
+          &.approved {
+            background-color: #71ABDF;
+            color: white;
+            &:hover{
+              background-color: #5786af;
+    
+            }
+          }
+          &.rejected {
+            background-color: #ED6663;
+            color: white;
+            &:hover{
+              background-color: #96403f;
+    
+            }
+          }
+          &.pending {
+            background-color: #2196f3;
+            color: white;
+            &:hover{
+              background-color: #0064b6;
+  
+            }
+          }
+        }
+      }
+    }
+  
+    .actions {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      background-color: transparent;
+  
+      button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+  
+        &:focus {
+          outline: none;
+        }
+      }
+  
+      .save-button {
+        background-color: #71ABDF;
+        color: white;
+  
+        &:hover {
+          background-color: #5786af;
+        }
+      }
+      .cancel-button {
+        background-color: #0A2C66;
+        color: white;
+        &:hover {
+          background-color: #020a16;
+        }
+      }
+    }
+  }
+  
+  .header-container {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 20px 0;
+    background-color: #E0EDFF;
+    
+    button{
+        margin: 0 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

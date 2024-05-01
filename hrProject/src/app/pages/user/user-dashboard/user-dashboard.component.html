@@ -1,0 +1,66 @@
+<app-top-bar></app-top-bar>
+<div class="dashboard-container">
+  <div class="employee-dashboard">
+    <div class="employee-info">
+      <h2>Employee</h2>
+      <p>
+        <strong>FirstName:</strong>
+        {{ employee.firstName }}
+      </p>
+      <p>
+        <strong>LastName:</strong>
+        {{ employee.lastName }}
+      </p>
+      <p><strong>Vacation Days:</strong> {{ daysOff }} DAYS</p>
+    </div>
+    <form class="vacation-request-form" (ngSubmit)="submitVacationRequest()">
+      <div class="date-picker">
+        <input
+          type="date"
+          name="startDate"
+          [(ngModel)]="vacationRequest.fromDate"
+          placeholder="START DATE"
+          required
+        />
+        <input
+          type="date"
+          name="endDate"
+          [(ngModel)]="vacationRequest.toDate"
+          placeholder="END DATE"
+          required
+        />
+      </div>
+      <textarea
+        name="note"
+        [(ngModel)]="vacationRequest.notes"
+        placeholder="NOTE"
+        required
+      ></textarea>
+      <button type="submit">REQUEST</button>
+    </form>
+  </div>
+  <div class="calendar-and-vacations">
+    <app-calendar></app-calendar>
+    <div class="approved-vacations">
+      <h3>Vacation Days</h3>
+      <div class="vacation-list">
+        <div *ngFor="let vacation of vacationList" class="vacation-entry">
+          <span class="vacation-dates"
+            >{{ vacation.fromDate | date : "mediumDate" }} -
+            {{ vacation.toDate | date : "mediumDate" }}</span
+          >
+          <button
+            class="status-button"
+            [ngClass]="{
+              approved: vacation.status === 'APPROVED',
+              pending: vacation.status === 'PENDING',
+              rejected: vacation.status === 'REJECTED'
+            }"
+          >
+            {{ vacation.status }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,9 @@
 package com.example.backend.service;
 
-import com.example.backend.dto.timeSheetDTO.TimeSheetDto;
 import com.example.backend.dto.timeSheetDTO.TimeSheetResponseDto;
 import com.example.backend.dto.timeSheetDTO.TimeStatusResponseSheetDto;
 import com.example.backend.entity.Timesheet;
 import com.example.backend.entity.User;
-import com.example.backend.enums.TimeSheetStatus;
 import com.example.backend.repository.TimeSheetRepository;
 import com.example.backend.repository.UserRepository;
 
@@ -17,9 +15,6 @@ import com.example.backend.exception.TimeSheetAlreadyApproved;
 import com.example.backend.exception.UserAlreadyExistsException;
 import com.example.backend.exception.UserNotFoundException;
 import com.example.backend.utils.TimeSheetDaysUtil;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class TimeSheetService {

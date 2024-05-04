@@ -1,5 +1,6 @@
 package com.example.backend.enums;
 
-public class TimeSheetStatus {
+public enum TimeSheetStatus {
     PENDING,APPROVED,REJECTED
+
 }

@@ -6,8 +6,6 @@ import lombok.Data;
 
 import java.time.LocalDate;
 
-import com.example.backend.enums.TimeSheetStatus;
-
 @Data
 @Builder
 @AllArgsConstructor

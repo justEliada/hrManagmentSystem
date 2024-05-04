@@ -32,4 +32,18 @@ public abstract class BaseEntity {
     @Column(nullable = true)
     private LocalDateTime modifiedAt;
 
+    @Column(nullable = true)
+    private String modifiedBy;
+
+    @PrePersist
+    public void prePersist() {
+        createdAt = LocalDateTime.now();
+        modifiedAt = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    public void preUpdate() {
+        modifiedAt = LocalDateTime.now();
+    }
+
 }

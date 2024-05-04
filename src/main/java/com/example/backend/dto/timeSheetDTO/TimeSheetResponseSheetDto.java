@@ -7,6 +7,6 @@ import lombok.Data;
 @Data
 @Builder
 @AllArgsConstructor
-public class TimeSheetResponseSheetDTO {
+public class TimeSheetResponseSheetDto {
     private String message;
 }

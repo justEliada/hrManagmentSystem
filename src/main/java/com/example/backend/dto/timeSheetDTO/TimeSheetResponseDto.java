@@ -5,15 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
-
 import com.example.backend.entity.User;
 import com.example.backend.enums.TimeSheetStatus;
 
 @Data
 @Builder
 @AllArgsConstructor
-public class TimeSheetManagerResponseDTO {
-    private Long id;
+public class TimeSheetResponseDto {
+    private Long userId;
     private LocalDate fromDate;
     private LocalDate toDate;
     private TimeSheetStatus status;

@@ -16,4 +16,59 @@ import java.util.List;
 @RestController
 @RequestMapping("/auth/user")
 public class UserController {
+
+    @Autowired
+    private UserService userService;
+
+    @PostMapping("/add")
+    public ResponseEntity<?> addNewUser(@RequestBody UserDto userDto) {
+        try {
+            UserDto newUser = userService.addUser(userDto);
+            return new ResponseEntity<>(newUser, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(e.getMessage());
+        }
+    }
+
+    @PostMapping("/edit/{id}")
+    public ResponseEntity<UserResponseDto> editUser(@PathVariable Long id,
+                                                    @RequestBody UserResponseDto userResponseDto) {
+        UserResponseDto updatedUser = userService.editUser(id, userResponseDto);
+        return ResponseEntity.ok(updatedUser);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<String> deleteUser(@PathVariable Long id) {
+        userService.deleteUser(id);
+        return ResponseEntity.ok("User deleted successfully");
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<UserResponseDto> getUser(@PathVariable Long id) {
+        UserResponseDto userResponseDto = userService.getUserById(id);
+        return ResponseEntity.ok(userResponseDto);
+    }
+    @GetMapping("/days-off/{id}")
+    public ResponseEntity<Integer> getUserDaysOff(@PathVariable Long id) {
+        Integer daysOff = userService.getUserDaysOff(id);
+        return ResponseEntity.ok(daysOff);
+    }
+    @GetMapping("/")
+    public ResponseEntity<List<UserResponseDto>> getAllUsers() {
+        List<UserResponseDto> users = userService.getAllUsers();
+        return ResponseEntity.ok(users);
+    }
+    @GetMapping("/filter")
+    public ResponseEntity<List<UserResponseDto>> getUsersByTimeSheet() {
+        List<UserResponseDto> users = userService.getUsersByLeastCreatedTimeSheet();
+        return ResponseEntity.ok(users);
+    }
+
+    @PostMapping("/login")
+    public ResponseEntity<UserResponseDto> login(@RequestBody UserLoginDto userLoginDto) {
+        UserResponseDto userResponseDto = userService.verifyUser(userLoginDto.getUsername(), userLoginDto.getPassword());
+        return ResponseEntity.ok(userResponseDto);
+    }
 }

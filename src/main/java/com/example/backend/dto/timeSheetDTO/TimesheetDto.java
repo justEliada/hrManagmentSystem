@@ -11,7 +11,7 @@ import com.example.backend.enums.TimeSheetStatus;
 @Data
 @Builder
 @AllArgsConstructor
-public class TimesheetDTO {
+public class TimeSheetDto {
     private Long id;
     private LocalDate fromDate;
     private LocalDate toDate;

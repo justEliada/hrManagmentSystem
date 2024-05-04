@@ -14,4 +14,20 @@ import java.util.List;
 @RestController
 @RequestMapping("/auth/timesheet")
 public class TimeSheetController {
+
+
+    @Autowired
+    private TimeSheetService timeSheetService;
+
+    @PostMapping("/add")
+    public ResponseEntity<?> addNewTimeSheet(@RequestBody TimeSheetResponseDto timeSheetDto) {
+        try {
+            TimeSheetResponseDto newTimeSheet = timeSheetService.addTimeSheet(timeSheetDto);
+            return new ResponseEntity<>(newTimeSheet, HttpStatus.CREATED);
+        } catch (Exception e) {
+            return ResponseEntity
+                    .status(HttpStatus.BAD_REQUEST)
+                    .body(e.getMessage());
+        }
+    }
 }

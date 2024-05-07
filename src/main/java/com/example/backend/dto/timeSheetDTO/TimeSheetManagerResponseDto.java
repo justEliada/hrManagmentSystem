@@ -1,5 +1,6 @@
 package com.example.backend.dto.timeSheetDTO;
 
+import com.example.backend.enums.TimeSheetStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

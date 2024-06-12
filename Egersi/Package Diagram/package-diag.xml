@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" modified="2024-05-19T14:30:43.602Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="9lP4zwfydAe_jBOJLCJ9" version="24.4.3" type="device">
+  <diagram name="HR Management System" id="HRManagementSystem">
+    <mxGraphModel dx="1687" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oR7S54KYPu-dX1X8w1BO-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="410" height="920" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="User Management" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="90" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="- Authentication\n- Role-based Access Control\n- Profile Management" style="text;whiteSpace=wrap;html=1;" parent="3" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Employee Management" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="210" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="- Employee Records\n- Personal Information\n- Employment History" style="text;whiteSpace=wrap;html=1;" parent="5" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="Leave Management" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="350" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="- Leave Requests\n- Leave Approvals\n- Leave Balances" style="text;whiteSpace=wrap;html=1;" parent="7" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="Payroll Management" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="490" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="- Salary Calculations\n- Payslip Generation\n- Payroll Processing" style="text;whiteSpace=wrap;html=1;" parent="9" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="Performance Management" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="630" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="- Performance Appraisals\n- Reviews\n- Employee Feedback" style="text;whiteSpace=wrap;html=1;" parent="11" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="Compliance and Reporting" style="shape=rectangle;whiteSpace=wrap;html=1;verticalAlign=bottom;" parent="1" vertex="1">
+          <mxGeometry x="85" y="750" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14" value="- Regulatory Compliance\n- Reports Generation" style="text;whiteSpace=wrap;html=1;" parent="13" vertex="1">
+          <mxGeometry x="10" y="10" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="oR7S54KYPu-dX1X8w1BO-15" value="HR Management System" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

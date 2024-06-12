@@ -1,0 +1,149 @@
+<mxfile host="app.diagrams.net" modified="2024-06-10T12:00:06.310Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="GYwjkaYzjU_sCZYaATze" version="24.5.2" type="device">
+  <diagram name="Page-1" id="FeXMVjqpmwhc85rIKCMG">
+    <mxGraphModel dx="1434" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-121" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="8.5" y="-100" width="1530" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-92" value="Data Stores" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;" parent="1" vertex="1">
+          <mxGeometry x="52" y="326" width="1380" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-93" value="Employee Data" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="87" y="351" width="123" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-94" value="Training Data" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="320" y="351" width="111" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-95" value="Leave Requests" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="544" y="351" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-96" value="Payroll Data" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="922" y="351" width="102" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-97" value="Compliance Reports" style="whiteSpace=wrap;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="1239" y="351" width="158" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-98" value="Processes" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="20" y="173" width="1250" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-99" value="Performance Evaluation" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="55" y="198" width="186" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-100" value="Training Management" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="291" y="198" width="169" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-101" value="Leave Management" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="530" y="198" width="153" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-102" value="Payroll Processing" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="759" y="198" width="142" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-103" value="Compliance Monitoring and Reporting" style="whiteSpace=wrap;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="952" y="198" width="283" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-104" value="External Entities" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="50" y="20" width="1447" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-105" value="HR Professional" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="85" y="45" width="125" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-106" value="HR Administrator" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="531" y="45" width="138" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-107" value="HR Compliance Officer" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="1147" y="45" width="179" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-108" value="Employee" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="806" y="45" width="85" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-109" value="Submit Evaluation" style="curved=1;startArrow=none;endArrow=block;exitX=0.503625;exitY=1;entryX=0.49974798387096775;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-105" target="R9_AwcOZCo2h9wKXxd8i-99" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-110" value="Assign Training" style="curved=1;startArrow=none;endArrow=block;exitX=0.0008208786231884058;exitY=0.8785693156310359;entryX=0.4995377218934911;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-106" target="R9_AwcOZCo2h9wKXxd8i-100" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="375" y="104" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-111" value="Approve Leave" style="curved=1;startArrow=none;endArrow=block;exitX=0.3356075984515183;exitY=1;entryX=0.3352126006652658;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-106" target="R9_AwcOZCo2h9wKXxd8i-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="544" y="104" />
+              <mxPoint x="544" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-112" value="Process Payroll" style="curved=1;startArrow=none;endArrow=block;exitX=0.9978770380434783;exitY=0.8686676551578055;entryX=0.5030122139084507;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-106" target="R9_AwcOZCo2h9wKXxd8i-102" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="104" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-113" value="Monitor Compliance" style="curved=1;startArrow=none;endArrow=block;exitX=0.17604675861266336;exitY=1;entryX=0.49960661439929327;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-107" target="R9_AwcOZCo2h9wKXxd8i-103" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1093" y="104" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-114" value="Record Evaluation" style="curved=1;startArrow=none;endArrow=block;exitX=0.49974798387096775;exitY=1;entryX=0.4955538617886179;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-99" target="R9_AwcOZCo2h9wKXxd8i-93" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-115" value="Track Training" style="curved=1;startArrow=none;endArrow=block;exitX=0.4995377218934911;exitY=1;entryX=0.49929617117117114;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-100" target="R9_AwcOZCo2h9wKXxd8i-94" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-116" value="Manage Requests" style="curved=1;startArrow=none;endArrow=block;exitX=0.5005616830065359;exitY=1;entryX=0.5006875;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-101" target="R9_AwcOZCo2h9wKXxd8i-95" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-117" value="Calculate Payroll" style="curved=1;startArrow=none;endArrow=block;exitX=0.5030122139084507;exitY=1;entryX=0.0038105085784313725;entryY=0.0590597233157118;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-102" target="R9_AwcOZCo2h9wKXxd8i-96" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="326" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-118" value="Generate Reports" style="curved=1;startArrow=none;endArrow=block;exitX=0.49960661439929327;exitY=1;entryX=0.5011743473101266;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-103" target="R9_AwcOZCo2h9wKXxd8i-97" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1093" y="257" />
+              <mxPoint x="1318" y="292" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-119" value="Request Leave" style="curved=1;startArrow=none;endArrow=block;exitX=0.0018152573529411765;exitY=0.7915497449387994;entryX=0.6659107653478061;entryY=0;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-108" target="R9_AwcOZCo2h9wKXxd8i-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="669" y="104" />
+              <mxPoint x="669" y="173" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="R9_AwcOZCo2h9wKXxd8i-120" value="View Payroll" style="curved=1;startArrow=none;endArrow=block;exitX=0.9981387867647059;exitY=0.6075868992013218;entryX=1.0047296262254901;entryY=0.2043763775150751;rounded=0;" parent="1" source="R9_AwcOZCo2h9wKXxd8i-108" target="R9_AwcOZCo2h9wKXxd8i-96" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1335" y="104" />
+              <mxPoint x="1335" y="257" />
+              <mxPoint x="1187" y="292" />
+              <mxPoint x="1187" y="326" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QSpBG2WEl7tt7MtHN_0N-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;DFD for HR Management System&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="630" y="-100" width="250" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
